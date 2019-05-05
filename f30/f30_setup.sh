@@ -19,10 +19,27 @@ sudo dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-r
 sudo rpm -v --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg
 sudo dnf config-manager --add-repo https://download.sublimetext.com/rpm/stable/x86_64/sublime-text.repo
 
-sudo dnf update
+sudo dnf update -y
 sudo dnf install -y binutils gcc make patch glibc-headers glibc-devel kernel-headers kernel-devel dkms vim subversion gcc-c++
 sudo dnf install -y openssl-devel libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel
 sudo dnf install -y R vlc sublime-text tmux htop zsh gnome-todo python3-csvkit python3-pygame f30-backgrounds-extras-gnome gnome-tweaks qbittorrent gnote rednotebook # mariadb focuswriter okular
+
+# user environment
+# eBooks
+cd /run/media/sschmidt/KINGSTON/Documents/
+runuser sschmidt -c "cp -r eBooks /home/sschmidt/Documents/"
+
+# Pictures
+cd /run/media/sschmidt/KINGSTON/Pictures/
+runuser sschmidt -c "cp -r Portrait /home/sschmidt/Pictures/"
+
+# R scripts
+cd /run/media/sschmidt/KINGSTON/Downloads/
+runuser sschmidt -c "cp -r cd_keys.txt R /home/sschmidt/Downloads/"
+
+# git config
+runuser sschmidt -c "git config --global user.name 'Stefan Schmidt'"
+runuser sschmidt -c "git config --global user.email 'stefan7schmidt@gmx.net'"
 
 # rstudio
 cd /home/sschmidt/Downloads/R/
@@ -30,20 +47,7 @@ cd /home/sschmidt/Downloads/R/
 sudo dnf install -y rstudio-1.1.463-x86_64.rpm
 
 # texlive
-#sudo dnf install -y texlive-scheme-full
-
-# user environment
-runuser sschmidt -c "mkdir -p /home/sschmidt/wrk/studio /home/sschmidt/Documents/eBooks"
-# eBooks
-cd /run/media/sschmidt/KINGSTON/Documents/
-runuser sschmidt -c "cp -r * /home/sschmidt/Documents/eBooks"
-# R scripts
-cd /run/media/sschmidt/KINGSTON/Downloads/
-runuser sschmidt -c "cp -r cd_keys.txt R /home/sschmidt/Downloads/"
-# git config
-runuser sschmidt -c "git config --global user.name 'Stefan Schmidt'"
-runuser sschmidt -c "git config --global user.email 'stefan7schmidt@gmx.net'"
-
+sudo dnf install -y texlive-scheme-full
 
 
 
