@@ -8,8 +8,8 @@
 #		- libs (to build common R packages)
 #		- Tools (MySQL client, htop, zsh, tmux, vlc...)
 #
-# 2019-05-05 SJS:
-# epel and rpm fusion are not yet available for EL8.
+# 2019-05-12 SJS:
+# epel not yet available for EL8.
 
 
 # epel & rpm fusion
