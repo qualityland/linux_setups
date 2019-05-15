@@ -10,6 +10,8 @@
 #
 # 2019-05-12 SJS:
 # epel not yet available for EL8.
+# 2019-05-15 SJS:
+# removed packages that are part of workstation installation.
 
 
 # epel & rpm fusion
@@ -21,7 +23,7 @@ sudo rpm -v --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg
 sudo dnf config-manager --add-repo https://download.sublimetext.com/rpm/stable/x86_64/sublime-text.repo
 
 sudo yum update
-sudo yum install -y gcc patch glibc-headers glibc-devel kernel-headers kernel-devel gcc-c++ tree git # subversion
+sudo yum install -y kernel-devel patch # already in rhel8 workstation: gcc glibc-headers glibc-devel kernel-headers gcc-c++ tree git subversion
 sudo yum install -y openssl-devel libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel
 sudo yum install -y tmux mariadb zsh sublime-text # R htop vlc gnome-todo focuswriter okular
 
