@@ -21,7 +21,7 @@ sudo dnf config-manager --add-repo https://download.sublimetext.com/rpm/stable/x
 
 sudo dnf update -y
 sudo dnf install -y binutils gcc make patch glibc-headers glibc-devel kernel-headers kernel-devel dkms vim subversion gcc-c++
-sudo dnf install -y openssl-devel libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel
+sudo dnf install -y openssl-devel libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel exfat-utils fuse-exfat
 sudo dnf install -y R vlc sublime-text tmux htop zsh gnome-todo python3-csvkit python3-pygame f30-backgrounds-extras-gnome gnome-tweaks qbittorrent gnote rednotebook # mariadb focuswriter okular
 
 # user environment
