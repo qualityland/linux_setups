@@ -23,7 +23,7 @@ yum-config-manager --add-repo https://download.sublimetext.com/rpm/stable/x86_64
 yum update -y
 yum install -y gcc patch glibc-headers glibc-devel kernel-headers kernel-devel dkms gcc-c++ tree git # subversion
 yum install -y openssl-devel libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel
-yum install -y R tmux mariadb htop zsh vlc sublime-text # rednotebook focuswriter okular
+yum install -y exfat-utils fuse-exfat R tmux mariadb htop zsh vlc sublime-text # rednotebook focuswriter okular
 
 # rstudio
 cd ~/Downloads/
