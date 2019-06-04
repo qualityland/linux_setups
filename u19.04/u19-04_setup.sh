@@ -23,7 +23,7 @@ sudo add-apt-repository ppa:rednotebook/stable -y
 sudo apt-get update && sudo apt-get upgrade -y
 
 # some development tools and libraries
-sudo apt-get install -y libssl-dev libxml2-dev libcurl4-openssl-dev libmariadbclient-dev libxt-dev libopenblas-dev python3-pygame python3-csvkit #git build-essential
+sudo apt-get install -y libssl-dev libxml2-dev libcurl4-openssl-dev libmariadbclient-dev libxt-dev libopenblas-dev python3-pygame python3-csvkit exfat-fuse exfat-utils
 sudo apt-get install -y vim tree htop tmux zsh gdebi apt-transport-https r-base mariadb-client sublime-text texlive-full calibre gnome-todo qbittorrent
 
 # RStudio
