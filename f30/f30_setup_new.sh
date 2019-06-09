@@ -27,7 +27,7 @@ dnf config-manager --add-repo https://download.sublimetext.com/rpm/stable/x86_64
 dnf update -y
 dnf install -y binutils gcc make patch glibc-headers glibc-devel kernel-headers kernel-devel dkms vim subversion gcc-c++
 dnf install -y openssl-devel libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel exfat-utils fuse-exfat
-dnf install -y R vlc sublime-text tmux htop zsh gnome-todo python3-csvkit python3-pygame f30-backgrounds-extras-gnome gnome-tweaks qbittorrent gnote rednotebook # mariadb focuswriter okular
+dnf install -y R vlc sublime-text tmux htop zsh gnome-todo python3-csvkit python3-pip f30-backgrounds-extras-gnome gnome-tweaks qbittorrent gnote rednotebook # mariadb focuswriter okular
 
 # user environment
 # eBooks
@@ -40,8 +40,8 @@ runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Pictures/* $MY_HOME/Pict
 runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Downloads/* $MY_HOME/Downloads/"
 
 # git config
-runuser sschmidt -c "git config --global user.name 'Stefan Schmidt'"
-runuser sschmidt -c "git config --global user.email 'stefan7schmidt@gmx.net'"
+#runuser sschmidt -c "git config --global user.name 'Stefan Schmidt'"
+#runuser sschmidt -c "git config --global user.email 'stefan7schmidt@gmx.net'"
 
 # rstudio
 cd $MY_HOME/Downloads/R/
