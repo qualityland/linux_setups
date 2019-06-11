@@ -32,7 +32,7 @@ apt-get update && apt-get upgrade -y
 
 # some development tools and libraries
 apt-get install -y libssl-dev libxml2-dev libcurl4-openssl-dev libmariadbclient-dev libxt-dev libopenblas-dev exfat-fuse exfat-utils
-apt-get install -y vim tree htop tmux zsh gdebi apt-transport-https r-base mariadb-client sublime-text texlive-full calibre gnome-todo qbittorrent
+apt-get install -y vim tree htop tmux zsh gdebi git apt-transport-https r-base mariadb-client sublime-text texlive-full calibre gnome-todo qbittorrent
 
 # user environment
 # eBooks
