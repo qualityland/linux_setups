@@ -15,7 +15,7 @@
 # variables
 MY_USER="sschmidt"
 MY_HOME="/home/$MY_USER"
-USB_STICK="/run/media/$MY_USER/Transcend/lx"
+USB_STICK="/media/$MY_USER/Transcend/lx"
 
 # CRAN R repository
 apt-key adv --keyserver keyserver.ubuntu.com --recv-keys  51716619E084DAB9
