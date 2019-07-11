@@ -11,6 +11,12 @@
 #		- libs (to build common R packages)
 #		- Tools (MySQL client, htop, zsh, tmux, vlc...) 
 
+
+# variables
+MY_USER="sschmidt"
+MY_HOME="/home/$MY_USER"
+USB_STICK="/run/media/$MY_USER/Transcend/lx"
+
 # add epel & rpm fusion repo
 yum install -y epel-release
 yum install -y https://download1.rpmfusion.org/free/el/rpmfusion-free-release-7.noarch.rpm https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-7.noarch.rpm
@@ -31,7 +37,7 @@ wget https://download1.rstudio.org/desktop/centos7/x86_64/rstudio-1.2.1335-x86_6
 yum install -y rstudio-1.2.1335-x86_64.rpm
 
 # texlive
-dnf install -y texlive
+yum install -y texlive
 
 
 # python3
@@ -44,3 +50,14 @@ tar xf Python-3.7.3.tar.xz
 cd Python-3.7.3
 ./configure --enable-optimizations
 make altinstall
+
+# user environment
+# eBooks
+runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Documents/* $MY_HOME/Documents/"
+# Pictures
+runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Pictures/* $MY_HOME/Pictures/"
+# R scripts
+runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Downloads/* $MY_HOME/Downloads/"
+# Dirwctories
+runuser $MY_USER -c "cd $MY_HOME; mkdir -p wrk/studio src tmp"
+
