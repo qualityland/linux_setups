@@ -28,7 +28,7 @@ dnf config-manager --add-repo https://download.sublimetext.com/rpm/stable/x86_64
 
 dnf update -y
 dnf install -y binutils gcc make patch glibc-headers glibc-devel kernel-headers kernel-devel dkms vim gcc-c++ # subversion
-dnf install -y openssl-devel libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel exfat-utils fuse-exfat
+dnf install -y openssl-devel libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel exfat-utils fuse-exfat util-linux-user powerline-fonts
 dnf install -y R vlc sublime-text tmux htop zsh gnome-todo python3-csvkit python3-pip f30-backgrounds-extras-gnome gnome-tweaks qbittorrent gnote rednotebook # mariadb focuswriter okular
 
 # user environment
@@ -40,6 +40,8 @@ runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Pictures/* $MY_HOME/Pict
 runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Downloads/* $MY_HOME/Downloads/"
 # Dirwctories
 runuser $MY_USER -c "cd $MY_HOME; mkdir -p wrk/studio src tmp"
+# zsh
+runuser $MY_USER -c "chsh -s $(which zsh)"
 
 # git config
 #runuser sschmidt -c "git config --global user.name 'Stefan Schmidt'"
