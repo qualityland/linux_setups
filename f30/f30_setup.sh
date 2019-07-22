@@ -59,5 +59,8 @@ dnf install -y rstudio-1.2.1335-x86_64.rpm
 # texlive
 dnf install -y texlive-scheme-full
 
+# configuration files
+# abcde (a better CD extractor)
+runuser $MY_USER -c "cp --no-preserve=all ../.abcde.conf $MY_HOME/"
 
 
