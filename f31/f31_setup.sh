@@ -28,7 +28,7 @@ dnf config-manager --add-repo https://download.sublimetext.com/rpm/stable/x86_64
 dnf update -y
 dnf install -y binutils gcc make patch glibc-headers glibc-devel kernel-headers kernel-devel dkms vim gcc-c++ abcde cd-discid lame cdparanoia id3v2 python3-eyed3 glyr
 dnf install -y openssl-devel libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel exfat-utils fuse-exfat util-linux-user powerline-fonts
-dnf install -y R vlc sublime-text tmux htop zsh gnome-todo python3-csvkit python3-pip f30-backgrounds-extras-gnome gnome-tweaks qbittorrent gnote rednotebook # mariadb focuswriter okular
+dnf install -y R vlc sublime-text tmux htop zsh python3-csvkit gnome-todo f31-backgrounds-extras-gnome gnome-tweaks qbittorrent gnote rednotebook
 
 # user environment
 # eBooks
@@ -38,7 +38,7 @@ runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Pictures/* $MY_HOME/Pict
 # R scripts
 runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Downloads/* $MY_HOME/Downloads/"
 # Dirwctories
-runuser $MY_USER -c "cd $MY_HOME; mkdir -p wrk/studio src tmp"
+#runuser $MY_USER -c "cd $MY_HOME; mkdir -p wrk/studio src tmp"
 # zsh
 #runuser $MY_USER -c "chsh -s $(which zsh)"
 
@@ -47,13 +47,12 @@ runuser $MY_USER -c "cd $MY_HOME; mkdir -p wrk/studio src tmp"
 #runuser sschmidt -c "git config --global user.email 'stefan7schmidt@gmx.net'"
 
 # rstudio
-cd $MY_HOME/Downloads/R/
 #wget https://download1.rstudio.org/rstudio-1.2.1335-x86_64.rpm
 # install old openssl version for rstudio
 # Fedora uses OpenSSL 1.1, but rstudio 1.2.1335 expects 1.0.
 # see: https://community.rstudio.com/t/rstudio-on-fedora-30-error-while-loading-shared-libraries-libssl-so-10/31380
 dnf install -y compat-openssl10
-dnf install -y rstudio-1.2.1335-x86_64.rpm
+dnf install -y $MY_HOME/Downloads/R/rstudio-1.2.1335-x86_64.rpm
 
 # texlive
 dnf install -y texlive-scheme-full
