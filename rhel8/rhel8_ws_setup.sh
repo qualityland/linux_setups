@@ -9,7 +9,12 @@
 #		- Tools (MySQL client, htop, zsh, tmux, vlc...)
 #
 # 2019-09-24 SJS:
-# R and yum not yet installable.
+# epel and rpmfusion activated.
+
+# variables
+MY_USER="sschmidt"
+MY_HOME="/home/$MY_USER"
+USB_STICK="/run/media/$MY_USER/Transcend/lx"
 
 
 # epel & rpm fusion
@@ -23,9 +28,10 @@ dnf config-manager --add-repo https://download.sublimetext.com/rpm/stable/x86_64
 dnf update
 dnf install -y kernel-devel patch
 dnf install -y openssl-devel libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel
-dnf install -y tmux mariadb zsh sublime-text # still not installable: R vlc
-#dnf install -y focuswriter okular
+dnf install -y tmux mariadb zsh sublime-text gnome-tweaks
 
+# still not installable:
+#dnf install -y R vlc exfat-utils fuse-exfat
 # rstudio
 #cd /home/sschmidt/Downloads/R/
 #wget https://download1.rstudio.org/rstudio-1.1.463-x86_64.rpm
@@ -33,4 +39,17 @@ dnf install -y tmux mariadb zsh sublime-text # still not installable: R vlc
 
 # texlive
 dnf install -y texlive
+
+# user environment
+# eBooks
+#runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Documents/* $MY_HOME/Documents/"
+# Pictures
+#runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Pictures/* $MY_HOME/Pictures/"
+# R scripts
+#runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Downloads/* $MY_HOME/Downloads/"
+# Dirwctories
+#runuser $MY_USER -c "cd $MY_HOME; mkdir -p wrk/studio src tmp"
+
+# not now...maybe later
+#dnf install -y focuswriter okular
 
