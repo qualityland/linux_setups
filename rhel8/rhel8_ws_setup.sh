@@ -2,14 +2,14 @@
 
 # rhel8_ws_setup.sh
 #
-# 2019-05-05 SJS
+# 2019-09-25 SJS
 # installs	- epel, rpmfusion and sublime repositories
-#		- R & RStudio
-#		- libs (to build common R packages)
-#		- Tools (MySQL client, htop, zsh, tmux, vlc...)
+#		    - libs (to build common R packages)
+#		    - Tools (MySQL client, htop, zsh, tmux, vlc...)
+#		    - R & RStudio not yet installable
+#		    - user env cannot be copied (lacking exfat support)
 #
-# 2019-09-24 SJS:
-# epel and rpmfusion activated.
+
 
 # variables
 MY_USER="sschmidt"
@@ -33,9 +33,8 @@ dnf install -y tmux mariadb zsh sublime-text gnome-tweaks
 # still not installable:
 #dnf install -y R vlc exfat-utils fuse-exfat
 # rstudio
-#cd /home/sschmidt/Downloads/R/
-#wget https://download1.rstudio.org/rstudio-1.1.463-x86_64.rpm
-#sudo yum install -y rstudio-1.1.463-x86_64.rpm
+#wget https://download1.rstudio.org/desktop/fedora28/x86_64/rstudio-1.2.5001-x86_64.rpm
+#dnf install -y $MY_HOME/Downloads/R/f28_rhel8/rstudio-1.2.5001-x86_64.rpm
 
 # texlive
 dnf install -y texlive
@@ -45,10 +44,12 @@ dnf install -y texlive
 #runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Documents/* $MY_HOME/Documents/"
 # Pictures
 #runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Pictures/* $MY_HOME/Pictures/"
+# Music
+#runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Music/* $MY_HOME/Music/"
+# Hoerspiele
+#runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Hoerspiel $MY_HOME/"
 # R scripts
 #runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Downloads/* $MY_HOME/Downloads/"
-# Dirwctories
-#runuser $MY_USER -c "cd $MY_HOME; mkdir -p wrk/studio src tmp"
 
 # not now...maybe later
 #dnf install -y focuswriter okular

@@ -53,12 +53,8 @@ runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Downloads/* $MY_HOME/Dow
 
 
 # rstudio
-#wget https://download1.rstudio.org/rstudio-1.2.1335-x86_64.rpm
-# install old openssl version for rstudio
-# Fedora uses OpenSSL 1.1, but rstudio 1.2.1335 expects 1.0.
-# see: https://community.rstudio.com/t/rstudio-on-fedora-30-error-while-loading-shared-libraries-libssl-so-10/31380
-dnf install -y compat-openssl10
-dnf install -y $MY_HOME/Downloads/R/rstudio-1.2.1335-x86_64.rpm
+#wget https://download1.rstudio.org/desktop/fedora28/x86_64/rstudio-1.2.5001-x86_64.rpm
+dnf install -y $MY_HOME/Downloads/R/f28_rhel8/rstudio-1.2.5001-x86_64.rpm
 
 # texlive
 dnf install -y texlive-scheme-full
