@@ -45,6 +45,8 @@ runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Downloads/* $MY_HOME/Dow
 # git config
 #runuser sschmidt -c "git config --global user.name 'Stefan Schmidt'"
 #runuser sschmidt -c "git config --global user.email 'stefan7schmidt@gmx.net'"
+#runuser sschmidt -c "git config credential.helper store"
+
 
 # rstudio
 #wget https://download1.rstudio.org/rstudio-1.2.1335-x86_64.rpm
