@@ -35,9 +35,13 @@ dnf install -y R vlc sublime-text tmux htop zsh python3-csvkit gnome-todo f31-ba
 runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Documents/* $MY_HOME/Documents/"
 # Pictures
 runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Pictures/* $MY_HOME/Pictures/"
+# Music
+runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Music/* $MY_HOME/Music/"
+# Hoerspiele
+runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Hoerspiel $MY_HOME/"
 # R scripts
 runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Downloads/* $MY_HOME/Downloads/"
-# Dirwctories
+# Directories
 #runuser $MY_USER -c "cd $MY_HOME; mkdir -p wrk/studio src tmp"
 # zsh
 #runuser $MY_USER -c "chsh -s $(which zsh)"
