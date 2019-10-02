@@ -18,23 +18,23 @@ USB_STICK="/run/media/$MY_USER/KINGSTON/lx"
 
 
 # epel & rpm fusion
-#dnf install -y epel-release
-#dnf install -y https://download1.rpmfusion.org/free/el/rpmfusion-free-release-8.noarch.rpm https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-8.noarch.rpm
+dnf install -y epel-release
+dnf install -y https://download1.rpmfusion.org/free/el/rpmfusion-free-release-8.noarch.rpm https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-8.noarch.rpm
 
 # sublime
 #rpm -v --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg
 #dnf config-manager --add-repo https://download.sublimetext.com/rpm/stable/x86_64/sublime-text.repo
 
-dnf update
-#dnf install -y kernel-devel patch
-#dnf install -y openssl-devel libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel
-#dnf install -y tmux mariadb zsh sublime-text gnome-tweaks R vlc
-
+dnf update -y
+dnf group install -y 'Development Tools'
+dnf install -y openssl-devel libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel
+dnf install -y tmux gnome-tweaks R vlc # mariadb zsh sublime-text
 # still not installable:
 #dnf install -y exfat-utils fuse-exfat
+
 # rstudio
 #wget https://download1.rstudio.org/desktop/fedora28/x86_64/rstudio-1.2.5001-x86_64.rpm
-#dnf install -y $MY_HOME/Downloads/R/f28_rhel8/rstudio-1.2.5001-x86_64.rpm
+dnf install -y $MY_HOME/Downloads/R/f28_rhel8/rstudio-1.2.5001-x86_64.rpm
 
 # texlive
 #dnf install -y texlive
