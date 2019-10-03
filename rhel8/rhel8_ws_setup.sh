@@ -9,7 +9,7 @@
 #		    - R & RStudio not yet installable
 #		    - user env cannot be copied (lacking exfat support)
 #
-
+# 2019-10-03 SJS installation sequence corrected.
 
 # variables
 MY_USER="sschmidt"
@@ -32,10 +32,6 @@ dnf install -y tmux gnome-tweaks R vlc # mariadb zsh sublime-text
 # still not installable:
 #dnf install -y exfat-utils fuse-exfat
 
-# rstudio
-#wget https://download1.rstudio.org/desktop/fedora28/x86_64/rstudio-1.2.5001-x86_64.rpm
-dnf install -y $MY_HOME/Downloads/R/f28_rhel8/rstudio-1.2.5001-x86_64.rpm
-
 # texlive
 #dnf install -y texlive
 
@@ -50,6 +46,10 @@ runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Music/* $MY_HOME/Music/"
 runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Hoerspiel $MY_HOME/"
 # R scripts
 runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Downloads/* $MY_HOME/Downloads/"
+
+# rstudio
+#wget https://download1.rstudio.org/desktop/fedora28/x86_64/rstudio-1.2.5001-x86_64.rpm
+dnf install -y $MY_HOME/Downloads/R/f28_rhel8/rstudio-1.2.5001-x86_64.rpm
 
 # not now...maybe later
 #dnf install -y focuswriter okular
