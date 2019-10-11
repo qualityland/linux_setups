@@ -30,6 +30,10 @@ dnf install -y binutils gcc make patch glibc-headers glibc-devel kernel-headers 
 dnf install -y openssl-devel libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel exfat-utils fuse-exfat util-linux-user powerline-fonts
 dnf install -y R vlc sublime-text tmux htop zsh python3-csvkit gnome-todo f31-backgrounds-extras-gnome gnome-tweaks qbittorrent gnote rednotebook
 
+# install musescore
+dnf copr enable jjames/MuseScore
+dnf install musescore
+
 # user environment
 # eBooks
 runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Documents/* $MY_HOME/Documents/"
