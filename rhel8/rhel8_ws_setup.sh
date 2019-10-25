@@ -10,7 +10,8 @@
 #		    - user env cannot be copied (lacking exfat support)
 #
 # 2019-10-03 SJS installation sequence corrected.
-# 2019-10-24 SJS  exfat-utils fuse-exfat added.
+# 2019-10-24 SJS exfat-utils fuse-exfat added.
+# 2019-10-25 SJS enable PowerTools repo
 
 # variables
 MY_USER="sschmidt"
@@ -18,7 +19,8 @@ MY_HOME="/home/$MY_USER"
 USB_STICK="/run/media/$MY_USER/KINGSTON/lx"
 
 
-# epel & rpm fusion
+# PowerTools, epel & rpm fusion
+dnf config-manager --enable PowerTools
 dnf install -y epel-release
 dnf install -y https://download1.rpmfusion.org/free/el/rpmfusion-free-release-8.noarch.rpm https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-8.noarch.rpm
 
