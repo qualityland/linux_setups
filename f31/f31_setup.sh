@@ -11,6 +11,7 @@
 #		- LaTeX (texlive)
 #		- sschmidt: create RStudio directory and .gitconfig
 #
+# 2019-11-09 SJS added gtksourceview3 (dependency for rednotebook)
 
 
 # variables
@@ -28,11 +29,11 @@ dnf config-manager --add-repo https://download.sublimetext.com/rpm/stable/x86_64
 dnf update -y
 dnf install -y binutils gcc make patch glibc-headers glibc-devel kernel-headers kernel-devel dkms vim gcc-c++ abcde cd-discid lame cdparanoia id3v2 python3-eyed3 glyr
 dnf install -y openssl-devel libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel exfat-utils fuse-exfat util-linux-user powerline-fonts
-dnf install -y R vlc sublime-text tmux htop zsh python3-csvkit gnome-todo f31-backgrounds-extras-gnome gnome-tweaks qbittorrent gnote rednotebook
+dnf install -y R vlc sublime-text tmux htop zsh python3-csvkit gnome-todo f31-backgrounds-extras-gnome gnome-tweaks qbittorrent gnote rednotebook gtksourceview3
 
 # install musescore
 dnf copr enable jjames/MuseScore
-dnf install musescore
+dnf install -y musescore
 
 # user environment
 # eBooks
