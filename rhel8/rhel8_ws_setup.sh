@@ -16,7 +16,7 @@
 # variables
 MY_USER="sschmidt"
 MY_HOME="/home/$MY_USER"
-USB_STICK="/run/media/$MY_USER/KINGSTON/lx"
+USB_STICK="/run/media/$MY_USER/Transcend/lx"
 
 
 # PowerTools, epel & rpm fusion
