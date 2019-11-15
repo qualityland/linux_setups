@@ -1,0 +1,5 @@
+tzdata:Oracle America
+gpgme:Oracle America
+python3-gpg:Oracle America
+dnf-plugin-spacewalk:Oracle America
+python3-dnf-plugin-spacewalk:Oracle America
