@@ -29,9 +29,10 @@ dnf install -y https://download1.rpmfusion.org/free/el/rpmfusion-free-release-8.
 #dnf config-manager --add-repo https://download.sublimetext.com/rpm/stable/x86_64/sublime-text.repo
 
 dnf update -y
+dnf install -y exfat-utils fuse-exfat
 dnf group install -y 'Development Tools'
 dnf install -y openssl-devel libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel
-dnf install -y tmux gnome-tweaks R vlc exfat-utils fuse-exfat # mariadb zsh sublime-text
+dnf install -y tmux gnome-tweaks R vlc # mariadb zsh sublime-text
 
 # texlive
 #dnf install -y texlive
