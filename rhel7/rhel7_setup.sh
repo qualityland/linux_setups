@@ -10,7 +10,8 @@
 #		- python3
 #		- libs (to build common R packages)
 #		- Tools (MySQL client, htop, zsh, tmux, vlc...) 
-
+#
+# 2019-11-16 SJS RStudio updated and copy PDFs to desktop.
 
 # variables
 MY_USER="sschmidt"
@@ -47,6 +48,8 @@ cd Python-3.7.3
 make altinstall
 
 # user environment
+# Desktop
+runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Desktop/* $MY_HOME/Desktop/"
 # eBooks
 runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Documents/* $MY_HOME/Documents/"
 # Pictures
@@ -70,5 +73,5 @@ runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Downloads/* $MY_HOME/Dow
 
 # rstudio
 #wget https://download1.rstudio.org/desktop/centos7/x86_64/rstudio-1.2.5001-x86_64.rpm
-yum install -y $MY_HOME/Downloads/R/rhel7/rstudio-1.2.5001-x86_64.rpm
+yum install -y $MY_HOME/Downloads/R/rhel7/rstudio-1.2.5019-x86_64.rpm
 

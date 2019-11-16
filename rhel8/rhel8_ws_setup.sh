@@ -12,7 +12,7 @@
 # 2019-10-03 SJS installation sequence corrected.
 # 2019-10-24 SJS exfat-utils fuse-exfat added.
 # 2019-10-25 SJS enable PowerTools repo
-# 2019-11-16 SJS copy current PDF files on Desktop
+# 2019-11-16 SJS copy current PDF files on Desktop. RStudio update.
 
 # variables
 MY_USER="sschmidt"
@@ -54,7 +54,7 @@ runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Downloads/* $MY_HOME/Dow
 
 # rstudio
 #wget https://download1.rstudio.org/desktop/fedora28/x86_64/rstudio-1.2.5001-x86_64.rpm
-dnf install -y $MY_HOME/Downloads/R/f28_rhel8/rstudio-1.2.5001-x86_64.rpm
+dnf install -y $MY_HOME/Downloads/R/f28_rhel8/rstudio-1.2.5019-x86_64.rpm
 
 # not now...maybe later
 #dnf install -y focuswriter okular

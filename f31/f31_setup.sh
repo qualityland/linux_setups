@@ -64,7 +64,7 @@ runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Backups $MY_HOME/"
 
 # rstudio
 #wget https://download1.rstudio.org/desktop/fedora28/x86_64/rstudio-1.2.5001-x86_64.rpm
-dnf install -y $MY_HOME/Downloads/R/f28_rhel8/rstudio-1.2.5001-x86_64.rpm
+dnf install -y $MY_HOME/Downloads/R/f28_rhel8/rstudio-1.2.5019-x86_64.rpm
 
 # texlive
 #dnf install -y texlive-scheme-full
