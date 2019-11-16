@@ -12,6 +12,7 @@
 # 2019-10-03 SJS installation sequence corrected.
 # 2019-10-24 SJS exfat-utils fuse-exfat added.
 # 2019-10-25 SJS enable PowerTools repo
+# 2019-11-16 SJS copy current PDF files on Desktop
 
 # variables
 MY_USER="sschmidt"
@@ -38,6 +39,8 @@ dnf install -y tmux gnome-tweaks R vlc # mariadb zsh sublime-text
 #dnf install -y texlive
 
 # user environment
+# Desktop
+runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Desktop/* $MY_HOME/Desktop/"
 # eBooks
 runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Documents/* $MY_HOME/Documents/"
 # Pictures
