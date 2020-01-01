@@ -13,6 +13,7 @@
 #
 # 2019-11-09 SJS added gtksourceview3 (dependency for rednotebook)
 # 2019-11-16 SJS copy current PDF files on Desktop
+# 2020-01-01 SJS RStudio updated.
 
 # variables
 MY_USER="sschmidt"
@@ -63,8 +64,8 @@ runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Backups $MY_HOME/"
 
 
 # rstudio
-#wget https://download1.rstudio.org/desktop/fedora28/x86_64/rstudio-1.2.5001-x86_64.rpm
-dnf install -y $MY_HOME/Downloads/R/f28_rhel8/rstudio-1.2.5019-x86_64.rpm
+#wget https://download1.rstudio.org/desktop/fedora28/x86_64/rstudio-1.2.5033-x86_64.rpm
+dnf install -y https://download1.rstudio.org/desktop/fedora28/x86_64/rstudio-1.2.5033-x86_64.rpm
 
 # texlive
 #dnf install -y texlive-scheme-full

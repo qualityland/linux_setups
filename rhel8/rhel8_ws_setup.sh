@@ -13,6 +13,7 @@
 # 2019-10-24 SJS exfat-utils fuse-exfat added.
 # 2019-10-25 SJS enable PowerTools repo
 # 2019-11-16 SJS copy current PDF files on Desktop. RStudio update.
+# 2020-01-01 SJS RStudio updated and dnf replaced with yum.
 
 # variables
 MY_USER="sschmidt"
@@ -21,22 +22,22 @@ USB_STICK="/run/media/$MY_USER/Transcend/lx"
 
 
 # PowerTools, epel & rpm fusion
-dnf config-manager --enable PowerTools
-dnf install -y epel-release
-dnf install -y https://download1.rpmfusion.org/free/el/rpmfusion-free-release-8.noarch.rpm https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-8.noarch.rpm
+yum config-manager --enable PowerTools
+yum install -y epel-release
+yum install -y https://download1.rpmfusion.org/free/el/rpmfusion-free-release-8.noarch.rpm https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-8.noarch.rpm
 
 # sublime
 #rpm -v --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg
-#dnf config-manager --add-repo https://download.sublimetext.com/rpm/stable/x86_64/sublime-text.repo
+#yum config-manager --add-repo https://download.sublimetext.com/rpm/stable/x86_64/sublime-text.repo
 
-dnf update -y
-dnf install -y exfat-utils fuse-exfat
-dnf group install -y 'Development Tools'
-dnf install -y openssl-devel libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel
-dnf install -y tmux gnome-tweaks R vlc # mariadb zsh sublime-text
+yum update -y
+yum install -y exfat-utils fuse-exfat
+yum group install -y 'Development Tools'
+yum install -y openssl-devel libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel
+yum install -y tmux gnome-tweaks R vlc # mariadb zsh sublime-text
 
 # texlive
-#dnf install -y texlive
+#yum install -y texlive
 
 # user environment
 # Desktop
@@ -53,9 +54,10 @@ runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Hoerspiel $MY_HOME/"
 runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Downloads/* $MY_HOME/Downloads/"
 
 # rstudio
-#wget https://download1.rstudio.org/desktop/fedora28/x86_64/rstudio-1.2.5001-x86_64.rpm
-dnf install -y $MY_HOME/Downloads/R/f28_rhel8/rstudio-1.2.5019-x86_64.rpm
+#wget https://download1.rstudio.org/desktop/fedora28/x86_64/rstudio-1.2.5033-x86_64.rpm
+#yum install -y $MY_HOME/Downloads/R/f28_rhel8/rstudio-1.2.5033-x86_64.rpm
+yum install -y https://download1.rstudio.org/desktop/fedora28/x86_64/rstudio-1.2.5033-x86_64.rpm
 
 # not now...maybe later
-#dnf install -y focuswriter okular
+#yum install -y focuswriter okular
 
