@@ -14,6 +14,7 @@
 # 2019-10-25 SJS enable PowerTools repo
 # 2019-11-16 SJS copy current PDF files on Desktop. RStudio update.
 # 2020-01-01 SJS RStudio updated and dnf replaced with yum.
+# 2020-01-16 SJS in CentOS 8.1 vlc installation currently fails; uncommented.
 
 # variables
 MY_USER="sschmidt"
@@ -34,7 +35,7 @@ yum update -y
 yum install -y exfat-utils fuse-exfat
 yum group install -y 'Development Tools'
 yum install -y openssl-devel libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel
-yum install -y tmux gnome-tweaks R vlc # mariadb zsh sublime-text
+yum install -y tmux gnome-tweaks R # vlc mariadb zsh sublime-text
 
 # texlive
 #yum install -y texlive
