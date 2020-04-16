@@ -28,7 +28,7 @@ yum install -y tmux gnome-tweaks R vlc # mariadb zsh sublime-text
 #yum install -y texlive
 
 # rstudio
-yum install -y https://download1.rstudio.org/desktop/fedora28/x86_64/rstudio-1.2.5033-x86_64.rpm
+yum install -y https://download1.rstudio.org/desktop/fedora28/x86_64/rstudio-1.2.5042-x86_64.rpm
 
 # not now...maybe later
 #yum install -y focuswriter okular
