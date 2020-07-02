@@ -24,7 +24,6 @@ dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-releas
 
 
 dnf update -y
-dnf install -y exfat-utils fuse-exfat
 dnf install -y binutils gcc make patch glibc-headers glibc-devel kernel-headers kernel-devel dkms vim gcc-c++ abcde cd-discid lame cdparanoia id3v2 python3-eyed3 glyr
 dnf install -y openssl-devel libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel util-linux-user powerline-fonts
 dnf install -y R vlc tmux python3-csvkit rstudio-desktop # sublime-text zsh htop
