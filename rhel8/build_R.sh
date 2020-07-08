@@ -7,7 +7,7 @@
 
 # variables
 MY_USER="sschmidt"
-R_VERSION="4.0.0"
+R_VERSION="4.0.2"
 SRC="/home/$MY_USER/src"
 
 #sudo yum builddep R -y
