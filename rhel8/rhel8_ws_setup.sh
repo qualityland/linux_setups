@@ -44,7 +44,7 @@ yum install -y yum-utils tmux gnome-tweaks vlc R # mariadb zsh sublime-text
 
 
 # rstudio
-yum install -y https://download1.rstudio.org/desktop/centos8/x86_64/rstudio-1.3.959-x86_64.rpm
+yum install -y https://download1.rstudio.org/desktop/centos8/x86_64/rstudio-1.3.1056-x86_64.rpm
 
 # not now...maybe later
 #yum install -y focuswriter okular
