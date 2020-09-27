@@ -17,19 +17,19 @@
 
 
 # PowerTools, epel & rpm fusion
-yum config-manager --enable PowerTools
-yum install -y epel-release
-yum install -y https://download1.rpmfusion.org/free/el/rpmfusion-free-release-8.noarch.rpm https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-8.noarch.rpm
+dnf config-manager --enable PowerTools
+dnf install -y epel-release
+dnf install -y https://download1.rpmfusion.org/free/el/rpmfusion-free-release-8.noarch.rpm https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-8.noarch.rpm
 
 # sublime
 #rpm -v --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg
 #yum config-manager --add-repo https://download.sublimetext.com/rpm/stable/x86_64/sublime-text.repo
 
-yum update -y
-yum install -y exfat-utils fuse-exfat
-yum group install -y 'Development Tools'
-yum install -y openssl-devel libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel
-yum install -y yum-utils tmux gnome-tweaks vlc R # mariadb zsh sublime-text
+dnf update -y
+dnf install -y exfat-utils fuse-exfat
+dnf group install -y 'Development Tools'
+dnf install -y openssl-devel libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel
+dnf install -y yum-utils tmux vlc R # gnome-tweaks mariadb zsh sublime-text
 
 # texlive
 #yum install -y texlive
@@ -44,7 +44,7 @@ yum install -y yum-utils tmux gnome-tweaks vlc R # mariadb zsh sublime-text
 
 
 # rstudio
-yum install -y https://download1.rstudio.org/desktop/centos8/x86_64/rstudio-1.3.1073-x86_64.rpm
+dnf install -y https://download1.rstudio.org/desktop/centos8/x86_64/rstudio-1.3.1093-x86_64.rpm
 
 # not now...maybe later
 #yum install -y focuswriter okular
