@@ -28,7 +28,7 @@ dnf install -y https://download1.rpmfusion.org/free/el/rpmfusion-free-release-8.
 dnf update -y
 dnf install -y exfat-utils fuse-exfat
 dnf group install -y 'Development Tools'
-dnf install -y openssl-devel libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel
+dnf install -y openssl-devel libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel pam-devel rdma-core-devel libibverbs-utils
 dnf install -y yum-utils tmux vlc R # gnome-tweaks mariadb zsh sublime-text
 
 # texlive
