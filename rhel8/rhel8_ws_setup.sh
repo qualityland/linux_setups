@@ -4,7 +4,7 @@
 #
 # 2020-04-07 SJS
 # run with sudo or as root
-# enables PowerTools repo
+# enables PowerTools & ELRepo repositories
 # installs  - epel and rpmfusion repositories
 #           - libs (to build common R packages)
 #           - Tools (MySQL client, htop, zsh, tmux, vlc...)
@@ -20,6 +20,19 @@
 dnf config-manager --enable PowerTools
 dnf install -y epel-release
 dnf install -y https://download1.rpmfusion.org/free/el/rpmfusion-free-release-8.noarch.rpm https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-8.noarch.rpm
+
+# ELRepo
+#dnf install -y https://www.elrepo.org/elrepo-release-8.el8.elrepo.noarch.rpm
+#rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
+
+# ELRepo main line kernel (kernel-ml)
+#dnf --enablerepo=elrepo-kernel install kernel-ml
+#dnf --enablerepo=elrepo-kernel --allowerasing install kernel-ml-{devel,headers,tools}
+
+# remove ELRepo kernel
+#dnf --allowerasing install kernel-{devel,headers,tools}
+#dnf remove kernel-ml
+
 
 # sublime
 #rpm -v --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg
