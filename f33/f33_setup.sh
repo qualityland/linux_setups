@@ -24,7 +24,7 @@ dnf update -y
 dnf install -y binutils gcc make patch glibc-headers glibc-devel kernel-headers kernel-devel dkms vim gcc-c++ tmux zsh
 
 # virtualization libs
-dnf install -y libvirt qemu-kvm
+dnf install -y libvirt qemu-kvm bridge-utils virt-install virt-top libguestfs-tools virt-manager
 
 # CD ripping
 #dnf install -y abcde cd-discid lame cdparanoia id3v2 python3-eyed3 glyr
