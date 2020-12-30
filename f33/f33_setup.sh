@@ -30,7 +30,7 @@ dnf install -y libvirt qemu-kvm bridge-utils virt-install virt-top libguestfs-to
 #dnf install -y abcde cd-discid lame cdparanoia id3v2 python3-eyed3 glyr
 
 # development libs
-dnf install -y openssl-devel libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel util-linux-user powerline-fonts libgit2-devel
+dnf install -y openssl openssl-devel libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel util-linux-user powerline-fonts libgit2-devel rdma-core-devel libibverbs-utils pam-devel cairo-devel
 
 # R and RStudio
 dnf install -y R rstudio-desktop # python3-csvkit sublime-text
