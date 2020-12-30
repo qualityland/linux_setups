@@ -21,7 +21,7 @@
 
 dnf update -y
 # development tools
-dnf install -y binutils gcc make patch glibc-headers glibc-devel kernel-headers kernel-devel dkms vim gcc-c++ tmux zsh
+dnf install -y binutils gcc make patch glibc-headers glibc-devel kernel-headers kernel-devel dkms vim gcc-c++ tmux zsh Lmod
 
 # virtualization libs
 dnf install -y libvirt qemu-kvm bridge-utils virt-install virt-top libguestfs-tools virt-manager
