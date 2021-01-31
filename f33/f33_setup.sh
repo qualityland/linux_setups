@@ -36,7 +36,7 @@ dnf install -y openssl openssl-devel libcurl-devel libxml2-devel libjpeg-turbo-d
 dnf install -y R rstudio-desktop # python3-csvkit sublime-text
 
 # desktop apps
-dnf install -y rednotebook f33-backgrounds-extras-gnome # gtksourceview3
+dnf install -y rednotebook foliate f33-backgrounds-extras-gnome # gtksourceview3
 #dnf install -y gnome-todo gnome-tweaks qbittorrent gnote
 
 
