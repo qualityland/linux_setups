@@ -38,11 +38,11 @@ dnf install -y https://download1.rpmfusion.org/free/el/rpmfusion-free-release-8.
 #rpm -v --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg
 #yum config-manager --add-repo https://download.sublimetext.com/rpm/stable/x86_64/sublime-text.repo
 
-dnf update -y
+#dnf update -y
 dnf install -y exfat-utils fuse-exfat
 dnf group install -y 'Development Tools'
 dnf install -y openssl-devel libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel pam-devel rdma-core-devel libibverbs-utils
-dnf install -y yum-utils tmux vlc R # gnome-tweaks mariadb zsh sublime-text
+dnf install -y yum-utils tmux vlc R mariadb zsh # gnome-tweaks sublime-text
 
 # texlive
 #yum install -y texlive
@@ -57,7 +57,7 @@ dnf install -y yum-utils tmux vlc R # gnome-tweaks mariadb zsh sublime-text
 
 
 # rstudio
-dnf install -y https://download1.rstudio.org/desktop/centos8/x86_64/rstudio-1.3.1093-x86_64.rpm
+dnf install -y https://download1.rstudio.org/desktop/centos8/x86_64/rstudio-1.4.1106-x86_64.rpm
 
 # not now...maybe later
 #yum install -y focuswriter okular
