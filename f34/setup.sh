@@ -10,8 +10,6 @@
 #		- LaTeX (texlive)
 
 
-# rpm fusion repo
-#dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 
 # Sublime repo
@@ -45,10 +43,15 @@ dnf install -y rednotebook foliate f34-backgrounds-extras-gnome # gtksourceview3
 
 
 # texlive
-#dnf install -y texlive-scheme-full
+dnf install -y texlive-scheme-full
 
 
 # musescore
 #dnf copr enable jjames/MuseScore
 #dnf install -y musescore
 
+# MacBook Pro Wifi
+# rpm fusion repo
+#dnf install -y https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+#dnf install -y akmods broadcom-wl
+#akmods
