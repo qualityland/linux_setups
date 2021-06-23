@@ -17,7 +17,7 @@
 
 
 # PowerTools, epel & rpm fusion
-dnf config-manager --enable PowerTools
+dnf config-manager --set-enabled powertools
 dnf install -y epel-release
 dnf install -y https://download1.rpmfusion.org/free/el/rpmfusion-free-release-8.noarch.rpm https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-8.noarch.rpm
 
