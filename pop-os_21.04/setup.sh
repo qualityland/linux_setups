@@ -34,6 +34,8 @@ apt update && apt upgrade -y
 
 # some development tools and libraries
 apt install -y build-essential libssl-dev libxml2-dev libcurl4-openssl-dev libxt-dev libopenblas-dev
+# libraries needed for contributed R packages
+apt install -y jags libzmq3-dev libnode-dev libfontconfig-dev default-jre default-jdk libmagick++-dev cmake libglpk-dev libmpfr-dev r-bioc-rbgl
 #apt install -y exfat-fuse exfat-utils abcde cd-discid lame cdparanoia id3 id3v2 eyed3
 apt install -y vim tree htop tmux zsh gdebi git apt-transport-https r-base mariadb-client texlive-full calibre gnome-todo qbittorrent # sublime-text
 
