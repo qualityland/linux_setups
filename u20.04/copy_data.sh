@@ -27,25 +27,25 @@ runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Desktop/* $MY_HOME/Deskt
 runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Documents/* $MY_HOME/Documents/"
 
 # Pictures
-runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Pictures/* $MY_HOME/Pictures/"
+#runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Pictures/* $MY_HOME/Pictures/"
 
 # Music
-runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Music/* $MY_HOME/Music/"
+#runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Music/* $MY_HOME/Music/"
 
 # Hoerspiele
-runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Hoerspiel $MY_HOME/"
+#runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Hoerspiel $MY_HOME/"
 
 # R scripts
-runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Downloads/* $MY_HOME/Downloads/"
+#runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Downloads/* $MY_HOME/Downloads/"
 
 # Backups
 runuser $MY_USER -c "cp -r --no-preserve=all $USB_STICK/Backups $MY_HOME/"
 
 # abcde (a better CD extractor) config file
-runuser $MY_USER -c "cp --no-preserve=all ../.abcde.conf $MY_HOME/"
+#runuser $MY_USER -c "cp --no-preserve=all ../.abcde.conf $MY_HOME/"
 
 # rstudio
 runuser $MY_USER -c "printf '\nexport QT_STYLE_OVERRIDE=gtk\n' | sudo tee -a ~/.profile"
 
-runuser $MY_USER -c "cd $MY_HOME; mkdir -p wrk/studio src tmp"
+#runuser $MY_USER -c "cd $MY_HOME; mkdir -p wrk/studio src tmp"
 
