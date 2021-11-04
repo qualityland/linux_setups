@@ -28,19 +28,13 @@ dnf install -y libvirt bridge-utils virt-install virt-top libguestfs-tools virt-
 #dnf install -y abcde cd-discid lame cdparanoia id3v2 python3-eyed3 glyr
 
 # development libs
-dnf install -y openssl libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel util-linux-user powerline-fonts libgit2-devel rdma-core-devel libibverbs-utils pam-devel cairo-devel # openssl-devel
+dnf install -y openssl libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel util-linux-user powerline-fonts libgit2-devel rdma-core-devel libibverbs-utils pam-devel cairo-devel readline-devel sqlite-devel
 
 # R and RStudio
 dnf install -y R rstudio-desktop # python3-csvkit sublime-text
 
 # desktop apps
 dnf install -y rednotebook foliate f35-backgrounds-extras-gnome # gtksourceview3
-#dnf install -y gnome-todo gnome-tweaks qbittorrent gnote
-
-
-# RStudio manually
-#dnf install -y https://download1.rstudio.org/desktop/centos8/x86_64/rstudio-1.3.1093-x86_64.rpm
-
 
 # texlive
 dnf install -y texlive-scheme-full
