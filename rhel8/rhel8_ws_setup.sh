@@ -57,7 +57,7 @@ dnf install -y yum-utils tmux vlc R mariadb zsh # gnome-tweaks sublime-text
 
 
 # rstudio
-dnf install -y https://download1.rstudio.org/desktop/centos8/x86_64/rstudio-2021.09.0-351-x86_64.rpm
+dnf install -y https://download1.rstudio.org/desktop/centos8/x86_64/rstudio-2021.09.2-382-x86_64.rpm
 
 # not now...maybe later
 #yum install -y focuswriter okular
