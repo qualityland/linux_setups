@@ -46,7 +46,6 @@ apt install -y jags libzmq3-dev libnode-dev libfontconfig1-dev default-jre defau
 apt install -y vim tree htop tmux zsh gdebi git apt-transport-https r-base mariadb-client texlive-full calibre qbittorrent # sublime-text
 
 # rstudio
-#cd /tmp/
-#wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-2021.09.0-351-amd64.deb
-#gdebi -n rstudio-2021.09.0-351-amd64.deb
-
+cd /tmp/
+wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-2022.02.0-443-amd64.deb
+gdebi -n rstudio-2022.02.0-443-amd64.deb
