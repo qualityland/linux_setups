@@ -2,14 +2,14 @@
 
 # setup.sh
 # installs an R development environment
-# on an Ubuntu 22.04 (Jammy Jellyfish) machine.
+# on an Pop!_OS 22.04 machine.
 
-# 2022-03-12 SJS
+# 2022-06-28 SJS
 # installs:
 #       - dev tools & libs
-#       - R & RStudio
-#       - Sublime Text 3
-#       - Rednotebook, Todo, Calibre, Texlive
+#	- R & RStudio
+#	- Sublime Text 3
+#	- Rednotebook, Todo, Calibre, Texlive
 #
 
 # CRAN R repository
@@ -35,13 +35,14 @@ sudo add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_
 
 
 # some development tools and libraries
-apt install -y build-essential libssl-dev libxml2-dev libcurl4-openssl-dev libxt-dev libopenblas-dev
-# some libraries needed to install contributed R packages
-apt install -y jags libzmq3-dev libnode-dev libfontconfig1-dev default-jre default-jdk libmagick++-dev cmake libglpk-dev libmpfr-dev libcairo2-dev libgsl-dev
+apt install -y libssl-dev libcurl4-openssl-dev libxt-dev libopenblas-dev
+# libraries needed for contributed R packages
+apt install -y jags libzmq3-dev libnode-dev libfontconfig-dev default-jre default-jdk libmagick++-dev cmake libglpk-dev libmpfr-dev r-bioc-rbgl libcairo2-dev
 #apt install -y exfat-fuse exfat-utils abcde cd-discid lame cdparanoia id3 id3v2 eyed3
-apt install -y vim tree htop tmux zsh gdebi git apt-transport-https r-base mariadb-client texlive-full calibre qbittorrent # sublime-text
+apt install -y vim tree htop tmux zsh gdebi apt-transport-https r-base mariadb-client texlive-full calibre gnome-todo qbittorrent # sublime-text
 
 # rstudio
-cd /tmp/
-wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-2022.02.0-443-amd64.deb
-gdebi -n rstudio-2022.02.0-443-amd64.deb
+#cd /tmp/
+#wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.4.1717-amd64.deb
+#gdebi -n rstudio-1.4.1717-amd64.deb
+
