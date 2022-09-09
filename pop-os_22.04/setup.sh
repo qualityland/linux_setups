@@ -37,7 +37,7 @@ add-apt-repository "deb https://cloud.r-project.org/bin/linux/ubuntu $(lsb_relea
 # some development tools and libraries
 apt install -y libssl-dev libcurl4-openssl-dev libxt-dev libopenblas-dev
 # libraries needed for contributed R packages
-apt install -y jags libzmq3-dev libnode-dev libfontconfig-dev default-jre default-jdk libmagick++-dev cmake libglpk-dev libmpfr-dev r-bioc-rbgl libcairo2-dev
+apt install -y jags libzmq3-dev libnode-dev libfontconfig-dev default-jre default-jdk libmagick++-dev cmake libglpk-dev libmpfr-dev r-bioc-rbgl libcairo2-dev libharfbuzz-dev libfribidi-dev
 #apt install -y exfat-fuse exfat-utils abcde cd-discid lame cdparanoia id3 id3v2 eyed3
 apt install -y vim tree htop tmux zsh gdebi apt-transport-https r-base mariadb-client texlive-full calibre gnome-todo qbittorrent # sublime-text
 
