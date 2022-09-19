@@ -42,7 +42,7 @@ dnf install -y https://download1.rpmfusion.org/free/el/rpmfusion-free-release-8.
 dnf install -y exfat-utils fuse-exfat
 dnf group install -y 'Development Tools'
 dnf install -y openssl-devel libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel pam-devel rdma-core-devel libibverbs-utils readline-devel sqlite-devel libffi-devel zeromq-devel
-dnf install -y yum-utils tmux vlc R mariadb zsh foliate # gnome-tweaks sublime-text
+dnf install -y Lmod yum-utils tmux vlc R mariadb zsh foliate # gnome-tweaks sublime-text
 
 # texlive
 #yum install -y texlive
@@ -57,7 +57,7 @@ dnf install -y yum-utils tmux vlc R mariadb zsh foliate # gnome-tweaks sublime-t
 
 
 # rstudio
-dnf install -y https://download1.rstudio.org/desktop/rhel8/x86_64/rstudio-2022.02.3-492-x86_64.rpm
+dnf install -y https://download1.rstudio.org/desktop/rhel8/x86_64/rstudio-2022.07.1-554-x86_64.rpm
 
 # not now...maybe later
 #yum install -y focuswriter okular
