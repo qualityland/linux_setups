@@ -5,8 +5,8 @@ passwd
 /bin/rootfs-expand
 
 # install bash completion
-yum upgrade -y
-yum install -y bash-comletion
+dnf upgrade -y
+dnf install -y bash-completion
 
 # set hostname
 hostnamectl set-hostname 'c82.example.com'
