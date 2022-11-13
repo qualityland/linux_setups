@@ -11,7 +11,8 @@
 
 # epel & rpm fusion
 dnf install -y epel-release
-dnf install -y https://download1.rpmfusion.org/free/el/rpmfusion-free-release-9.noarch.rpm https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-9.noarch.rpm
+sudo dnf config-manager --set-enabled crb
+#dnf install -y https://download1.rpmfusion.org/free/el/rpmfusion-free-release-9.noarch.rpm https://download1.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-9.noarch.rpm
 
 # sublime
 #rpm -v --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg
@@ -20,7 +21,7 @@ dnf install -y https://download1.rpmfusion.org/free/el/rpmfusion-free-release-9.
 dnf update -y
 dnf group install -y 'Development Tools'
 dnf install -y libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel pam-devel rdma-core-devel libibverbs-utils readline-devel sqlite-devel libffi-devel zeromq-devel
-dnf install -y yum-utils tmux vlc zsh # R mariadb gnome-tweaks sublime-text
+dnf install -y yum-utils tmux zsh R # vlc mariadb gnome-tweaks sublime-text
 
 # texlive
 #yum install -y texlive
