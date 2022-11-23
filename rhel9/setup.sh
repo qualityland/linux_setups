@@ -22,7 +22,7 @@ sudo dnf config-manager --set-enabled crb
 dnf update -y
 dnf group install -y 'Development Tools'
 dnf install -y libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel pam-devel rdma-core-devel libibverbs-utils readline-devel sqlite-devel libffi-devel zeromq-devel
-dnf install -y yum-utils tmux zsh R # foliate vlc mariadb gnome-tweaks sublime-text
+dnf install -y yum-utils tmux zsh R Lmod # foliate vlc mariadb gnome-tweaks sublime-text
 
 # texlive
 #yum install -y texlive
