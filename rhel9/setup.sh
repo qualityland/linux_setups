@@ -21,11 +21,12 @@ sudo dnf config-manager --set-enabled crb
 
 dnf update -y
 dnf group install -y 'Development Tools'
-dnf install -y libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel pam-devel rdma-core-devel libibverbs-utils readline-devel sqlite-devel libffi-devel zeromq-devel
+dnf install -y libcurl-devel libxml2-devel libjpeg-turbo-devel mariadb-devel pam-devel rdma-core-devel libibverbs-utils readline-devel sqlite-devel libffi-devel
+dnf install -y zeromq-devel harfbuzz-devel fribidi-devel freetype-devel libpng-devel libtiff-devel libjpeg-turbo-devel
 dnf install -y yum-utils tmux zsh R Lmod # foliate vlc mariadb gnome-tweaks sublime-text
 
 # texlive
 #yum install -y texlive
 
 # rstudio
-dnf install -y https://s3.amazonaws.com/rstudio-ide-build/desktop/rhel9/x86_64/rstudio-pro-2022.12.0-preview-341.pro2-x86_64.rpm
+dnf install -y https://s3.amazonaws.com/rstudio-ide-build/electron/rhel9/x86_64/rstudio-2022.12.0-353-x86_64.rpm
