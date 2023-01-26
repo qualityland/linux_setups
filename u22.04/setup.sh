@@ -38,9 +38,9 @@ apt install -y vim tree htop tmux zsh gdebi git apt-transport-https r-base maria
 
 # rstudio
 cd /tmp/
-wget https://download1.rstudio.org/desktop/jammy/amd64/rstudio-2022.07.2-576-amd64.deb
-gdebi -n rstudio-2022.07.2-576-amd64.deb
+wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2022.12.0-353-amd64.deb
+gdebi -n rstudio-2022.12.0-353-amd64.deb
 
 # obsidian
-wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.0.3/obsidian_1.0.3_amd64.deb
-gdebi -n obsidian_1.0.3_amd64.deb
+wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.1.9/obsidian_1.1.9_amd64.deb
+gdebi -n obsidian_1.1.9_amd64.deb
