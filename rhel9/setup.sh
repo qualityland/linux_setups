@@ -29,4 +29,4 @@ dnf install -y yum-utils tmux zsh R Lmod # foliate vlc mariadb gnome-tweaks subl
 #yum install -y texlive
 
 # rstudio
-dnf install -y https://s3.amazonaws.com/rstudio-ide-build/electron/rhel9/x86_64/rstudio-2022.12.0-353-x86_64.rpm
+dnf install -y https://s3.amazonaws.com/rstudio-ide-build/electron/rhel9/x86_64/rstudio-2022.12.1-364-x86_64.rpm
