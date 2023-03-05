@@ -42,5 +42,5 @@ wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2022.12.0-353-am
 gdebi -n rstudio-2022.12.0-353-amd64.deb
 
 # obsidian
-wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.1.9/obsidian_1.1.9_amd64.deb
-gdebi -n obsidian_1.1.9_amd64.deb
+wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.1.16/obsidian_1.1.16_amd64.deb
+gdebi -n obsidian_1.1.16_amd64.deb
