@@ -43,6 +43,6 @@ apt install -y vim tree htop tmux zsh gdebi apt-transport-https r-base mariadb-c
 
 # rstudio
 cd /tmp/
-wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2022.12.0-353-amd64.deb
-gdebi -n rstudio-2022.12.0-353-amd64.deb
+wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2023.03.0-386-amd64.deb
+gdebi -n rstudio-2023.03.0-386-amd64.deb
 
