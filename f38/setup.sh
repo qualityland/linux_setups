@@ -58,7 +58,7 @@ dnf install -y libcurl-devel libgit2-devel libibverbs-utils libtiff-devel libjpe
 dnf install -y R rstudio-desktop # python3-csvkit sublime-text
 
 # desktop apps
-dnf install -y rednotebook foliate f37-backgrounds-extras-gnome # gtksourceview3
+dnf install -y rednotebook foliate f38-backgrounds-extras-gnome # gtksourceview3
 
 # texlive
 dnf install -y texlive-scheme-full
