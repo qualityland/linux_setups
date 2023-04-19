@@ -37,8 +37,8 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 
 # Add Media Codecs
-dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
-dnf groupupdate sound-and-video
+dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin --allowerasing -y
+#dnf groupupdate sound-and-video
 
 
 # development tools
@@ -61,7 +61,7 @@ dnf install -y R rstudio-desktop # python3-csvkit sublime-text
 dnf install -y rednotebook foliate f38-backgrounds-extras-gnome # gtksourceview3
 
 # texlive
-dnf install -y texlive-scheme-full
+dnf install -y texlive-scheme-full texstudio
 
 # postgresql
 dnf install -y postgresql-server postgresql-contrib postgis postgresql-plpython3
