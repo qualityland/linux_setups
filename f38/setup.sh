@@ -29,15 +29,15 @@ dnf update -y
 
 
 # Add RPM Fusion
-dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+#dnf install -y https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 
 
 # Add Flathub
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+#flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 
 # Add Media Codecs
-dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin --allowerasing -y
+#dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin --allowerasing -y
 #dnf groupupdate sound-and-video
 
 
@@ -60,32 +60,35 @@ dnf install -y R rstudio-desktop # python3-csvkit sublime-text
 # desktop apps
 dnf install -y rednotebook foliate f38-backgrounds-extras-gnome # gtksourceview3
 
-# texlive
-dnf install -y texlive-scheme-full texstudio
-
 # postgresql
 dnf install -y postgresql-server postgresql-contrib postgis postgresql-plpython3
 postgresql-setup --initdb --unit postgresql
 systemctl enable postgresql
+systemctl start postgresql
+
 # edit /var/lib/pgsql/data/pg_hba.conf
 # replace line:
 # vhost    all             all             127.0.0.1/32            ident
 # with:
 # host    all             all             127.0.0.1/32            md5
-systemctl start postgresql
 
 # pgAdmin4 (PostgreSQL Admin Tool)
 dnf install -y https://ftp.postgresql.org/pub/pgadmin/pgadmin4/yum/pgadmin4-fedora-repo-2-1.noarch.rpm
+
 # edit /etc/yum.repos.d/pgadmin4.repo
 # replace line:
 # baseurl=https://ftp.postgresql.org/pub/pgadmin/pgadmin4/yum/fedora/fedora-$releasever-$basearch
 # with:
 # baseurl=https://ftp.postgresql.org/pub/pgadmin/pgadmin4/yum/fedora/fedora-37-$basearch
-dnf install -y pgadmin4-desktop
+
+#dnf install -y pgadmin4-desktop
 # connect to DB and set password for user postgres
 # sudo -u postgres psql postgres
 # \password postgres
 # \q
+
+# texlive
+dnf install -y texlive-scheme-full texstudio
 
 # Sublime repo
 #rpm -v --import https://download.sublimetext.com/sublimehq-rpm-pub.gpg
