@@ -20,7 +20,9 @@
 apt install -y flatpak gnome-software-plugin-flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-# remove legacy firefox
+# remove libreoffice & legacy firefox
+apt remove -y libreoffice-base-core libreoffice-calc libreoffice-common libreoffice-core libreoffice-draw libreoffice-gnome libreoffice-gtk3 libreoffice-help-common
+apt remove -y libreoffice-help-en-us libreoffice-impress libreoffice-math libreoffice-style-colibre libreoffice-style-elementary libreoffice-writer
 # sudo apt remove firefox-esr
 # replace with mozillas firefox flatpak or chrome
 
@@ -33,9 +35,8 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 
 
 # some development tools and libraries
-apt install -y make cmake build-essential wget curl llvm vim tree htop tmux zsh gdebi 
-apt install -y dirmngr gnupg apt-transport-https ca-certificates software-properties-common
-apt install -y libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev libncurses5-dev libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+apt install -y make cmake build-essential wget curl llvm vim tree htop tmux zsh gdebi apt-transport-https
+apt install -y libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev libncurses5-dev libncursesw5-dev tk-dev libxmlsec1-dev liblzma-dev
 
 
 # CRAN R repository
