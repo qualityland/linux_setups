@@ -47,6 +47,6 @@ apt install -y  r-base
 
 # rstudio
 cd /tmp/
-wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2023.06.1-524-amd64.deb
-gdebi -n rstudio-2023.06.1-524-amd64.deb
+wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2023.09.1-494-amd64.deb
+gdebi -n rstudio-2023.09.1-494-amd64.deb
 
