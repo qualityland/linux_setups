@@ -31,6 +31,6 @@ apt install -y vim tree htop tmux zsh gdebi git apt-transport-https r-base maria
 
 # rstudio
 #cd /tmp/
-#wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2024.04.0-735-amd64.deb
+#wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2024.09.1-394-amd64.deb
 #gdebi -n rstudio-2024.04.0-735-amd64.deb
 
