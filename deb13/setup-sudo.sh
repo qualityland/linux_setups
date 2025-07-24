@@ -2,14 +2,13 @@
 
 # setup-sudo.sh
 # installs an R development environment
-# on a Debian 12 machine.
+# on a Debian 13 machine.
 
-# 2023-07-08 SJS
+# 2025-07-24 SJS
 # removes:
 #	- legacy firefox
 #	- LibreOffice
 # installs:
-#	- flatpak
 #	- media codecs
 #       - dev tools & libs
 #	- R & RStudio
@@ -17,14 +16,12 @@
 
 
 # flatpak
-apt install -y flatpak gnome-software-plugin-flatpak
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+# apt install -y flatpak gnome-software-plugin-flatpak
+# flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-# remove libreoffice & legacy firefox
+# remove libreoffice
 apt remove -y libreoffice-base-core libreoffice-calc libreoffice-common libreoffice-core libreoffice-draw libreoffice-gnome libreoffice-gtk3 libreoffice-help-common
 apt remove -y libreoffice-help-en-us libreoffice-impress libreoffice-math libreoffice-style-colibre libreoffice-style-elementary libreoffice-writer
-# sudo apt remove firefox-esr
-# replace with mozillas firefox flatpak or chrome
 
 
 # R

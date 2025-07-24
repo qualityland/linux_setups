@@ -2,15 +2,12 @@
 
 # setup-user.sh
 # 
-# on a Debian 12 machine
+# on a Debian 13 machine
 
-# 2023-07-08 SJS
+# 2025-07-24 SJS
 # installs:
 #	- adds GPG key for R CRAN repository
 #	- adds R CRAN repository
-#       - 
-#	- 
-#
 
 
 # download CRAN GPG key and add to trusted keys
