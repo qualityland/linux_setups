@@ -38,7 +38,7 @@ apt install -y libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev l
 
 # CRAN R repository
 # libraries needed for contributed R packages
-apt install -y libcurl4-openssl-dev libxt-dev libopenblas-dev libgdal-dev libgeos-dev libproj-dev 
+apt install -y libcurl4-openssl-dev libxt-dev libopenblas-dev libgdal-dev libgeos-dev libproj-dev libudunits2-dev
 apt install -y jags libzmq3-dev libnode-dev libfontconfig-dev default-jre default-jdk libmagick++-dev libglpk-dev libmpfr-dev r-bioc-rbgl libcairo2-dev libharfbuzz-dev libfribidi-dev
 apt install -y  r-base
 
