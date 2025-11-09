@@ -2,12 +2,15 @@
 
 # setup-sudo.sh
 # installs an R development environment
-# on a Linux Mint 22.2 machine.
+# on a Debian 13 machine.
 
-# 2025-09-06 SJS
-
+# 2025-07-24 SJS
+# removes:
+#	- legacy firefox
+#	- LibreOffice
 # installs:
-#   - dev tools & libs
+#	- media codecs
+#       - dev tools & libs
 #	- R & RStudio
 #
 
@@ -17,8 +20,8 @@
 # flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 # remove libreoffice
-#apt remove -y libreoffice-base-core libreoffice-calc libreoffice-common libreoffice-core libreoffice-draw libreoffice-gnome libreoffice-gtk3 libreoffice-help-common
-#apt remove -y libreoffice-help-en-us libreoffice-impress libreoffice-math libreoffice-style-colibre libreoffice-style-elementary libreoffice-writer
+apt remove -y libreoffice-base-core libreoffice-calc libreoffice-common libreoffice-core libreoffice-draw libreoffice-gnome libreoffice-gtk3 libreoffice-help-common
+apt remove -y libreoffice-help-en-us libreoffice-impress libreoffice-math libreoffice-style-colibre libreoffice-style-elementary libreoffice-writer
 
 
 # R
@@ -30,7 +33,7 @@
 
 # some development tools and libraries
 apt install -y make cmake build-essential wget curl llvm vim tree htop tmux zsh gdebi apt-transport-https
-apt install -y libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev libncurses-dev tk-dev libxmlsec1-dev liblzma-dev
+apt install -y libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev libncurses5-dev libncursesw5-dev tk-dev libxmlsec1-dev liblzma-dev
 
 
 # CRAN R repository
