@@ -43,6 +43,6 @@ apt install -y  r-base
 cd /tmp/
 wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2025.09.2-418-amd64.deb
 gdebi -n rstudio-2025.09.2-418-amd64.deb
-wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.9.14/obsidian_1.9.14_amd64.deb
-gdebi -n obsidian_1.9.14_amd64.deb
+wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.10.3/obsidian_1.10.3_amd64.deb
+gdebi -n obsidian_1.10.3_amd64.deb
 

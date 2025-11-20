@@ -5,9 +5,6 @@
 # on a Debian 13 machine.
 
 # 2025-07-24 SJS
-# removes:
-#	- legacy firefox
-#	- LibreOffice
 # installs:
 #	- media codecs
 #       - dev tools & libs
@@ -20,8 +17,8 @@
 # flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 # remove libreoffice
-apt remove -y libreoffice-base-core libreoffice-calc libreoffice-common libreoffice-core libreoffice-draw libreoffice-gnome libreoffice-gtk3 libreoffice-help-common
-apt remove -y libreoffice-help-en-us libreoffice-impress libreoffice-math libreoffice-style-colibre libreoffice-style-elementary libreoffice-writer
+# apt remove -y libreoffice-base-core libreoffice-calc libreoffice-common libreoffice-core libreoffice-draw libreoffice-gnome libreoffice-gtk3 libreoffice-help-common
+# apt remove -y libreoffice-help-en-us libreoffice-impress libreoffice-math libreoffice-style-colibre libreoffice-style-elementary libreoffice-writer
 
 
 # R
@@ -46,6 +43,6 @@ apt install -y  r-base
 cd /tmp/
 wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2025.09.2-418-amd64.deb
 gdebi -n rstudio-2025.09.2-418-amd64.deb
-wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.9.14/obsidian_1.9.14_amd64.deb
-gdebi -n obsidian_1.9.14_amd64.deb
+wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.10.3/obsidian_1.10.3_amd64.deb
+gdebi -n obsidian_1.10.3_amd64.deb
 
