@@ -20,8 +20,8 @@
 # flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 # remove libreoffice
-apt remove -y libreoffice-base-core libreoffice-calc libreoffice-common libreoffice-core libreoffice-draw libreoffice-gnome libreoffice-gtk3 libreoffice-help-common
-apt remove -y libreoffice-help-en-us libreoffice-impress libreoffice-math libreoffice-style-colibre libreoffice-style-elementary libreoffice-writer
+#apt remove -y libreoffice-base-core libreoffice-calc libreoffice-common libreoffice-core libreoffice-draw libreoffice-gnome libreoffice-gtk3 libreoffice-help-common
+#apt remove -y libreoffice-help-en-us libreoffice-impress libreoffice-math libreoffice-style-colibre libreoffice-style-elementary libreoffice-writer
 
 
 # R
@@ -44,8 +44,27 @@ apt install -y  r-base
 
 # rstudio
 cd /tmp/
-wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2025.09.0-387-amd64.deb
-gdebi -n rstudio-2025.09.0-387-amd64.deb
-wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.9.12/obsidian_1.9.12_amd64.deb
-gdebi -n obsidian_1.9.12_amd64.deb
+wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2026.01.0-392-amd64.deb
+gdebi -n rstudio-2026.01.0-392-amd64.deb
+wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.11.5/obsidian_1.11.5_amd64.deb
+gdebi -n obsidian_1.11.5_amd64.deb
 
+# broadcom wifi (macbook)
+### edit /etc/apt/sources.list and add non-free repositories:
+# deb http://debian.ethz.ch/debian/ trixie main non-free non-free-firmware
+### run apt update and install following packages: 
+# sudo apt install -y dkms broadcom-sta-dkms linux-headers-$(uname -r)
+
+# postgresql
+### edit /etc/postgresql/17/main/pg_hba.conf
+### change line:
+# local   all             postgres                                peer
+### to:
+# local   all             postgres                                trust
+#
+### and this line:
+# local   all             all                                     peer
+### to:
+# local   all             all                                     md5
+### then restart the serivce
+# sudo service postgresql restart
