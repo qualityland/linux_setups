@@ -44,10 +44,10 @@ apt install -y  r-base
 
 # rstudio
 cd /tmp/
-wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2026.01.0-392-amd64.deb
-gdebi -n rstudio-2026.01.0-392-amd64.deb
-wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.11.5/obsidian_1.11.5_amd64.deb
-gdebi -n obsidian_1.11.5_amd64.deb
+wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2026.01.1-403-amd64.deb
+gdebi -n rstudio-2026.01.1-403-amd64.deb
+wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.4/obsidian_1.12.4_amd64.deb
+gdebi -n obsidian_1.12.4_amd64.deb
 
 # broadcom wifi (macbook)
 ### edit /etc/apt/sources.list and add non-free repositories:
