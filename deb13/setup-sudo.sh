@@ -44,8 +44,8 @@ apt install -y  r-base
 
 # rstudio
 cd /tmp/
-wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2026.01.2-418-amd64.deb
-gdebi -n rstudio-2026.01.2-418-amd64.deb
+wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2026.06.0-242-amd64.deb
+gdebi -n rstudio-2026.06.0-242-amd64.deb
 wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.7/obsidian_1.12.7_amd64.deb
 gdebi -n obsidian_1.12.7_amd64.deb
 
