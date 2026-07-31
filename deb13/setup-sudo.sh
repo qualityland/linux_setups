@@ -32,7 +32,8 @@
 
 
 # some development tools and libraries
-apt install -y make cmake build-essential wget curl llvm vim tree htop tmux zsh gdebi apt-transport-https
+apt install -y bc binutils bison dwarves flex gcc git gnupg2 gzip libelf-dev libncurses5-dev libssl-dev make openssl pahole perl-base rsync tar xz-utils
+apt install -y cmake build-essential wget curl llvm vim tree htop tmux zsh gdebi apt-transport-https
 apt install -y libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev libncurses5-dev libncursesw5-dev tk-dev libxmlsec1-dev liblzma-dev
 
 
