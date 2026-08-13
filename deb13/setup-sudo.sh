@@ -39,16 +39,16 @@ apt install -y libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev l
 
 # CRAN R repository
 # libraries needed for contributed R packages
-apt install -y libcurl4-openssl-dev libxt-dev libopenblas-dev libgdal-dev libgeos-dev libproj-dev libudunits2-dev
-apt install -y jags libzmq3-dev libnode-dev libfontconfig-dev default-jre default-jdk libmagick++-dev libglpk-dev libmpfr-dev r-bioc-rbgl libcairo2-dev libharfbuzz-dev libfribidi-dev
+apt install -y libcurl4-openssl-dev libxt-dev libopenblas-dev libgdal-dev libgeos-dev libproj-dev libudunits2-dev jags libzmq3-dev libnode-dev libfontconfig-dev
+apt install -y default-jre default-jdk libmagick++-dev libglpk-dev libmpfr-dev r-bioc-rbgl libcairo2-dev libharfbuzz-dev libfribidi-dev
 apt install -y  r-base
 
 # rstudio
 cd /tmp/
-wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2026.06.0-242-amd64.deb
-gdebi -n rstudio-2026.06.0-242-amd64.deb
-wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.7/obsidian_1.12.7_amd64.deb
-gdebi -n obsidian_1.12.7_amd64.deb
+wget https://download1.rstudio.org/electron/jammy/amd64/rstudio-2026.07.1-147-amd64.deb
+gdebi -n rstudio-2026.07.1-147-amd64.deb
+wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.13.7/obsidian_1.13.7_amd64.deb
+gdebi -n obsidian_1.13.7_amd64.deb
 
 # broadcom wifi (macbook)
 ### edit /etc/apt/sources.list and add non-free repositories:
